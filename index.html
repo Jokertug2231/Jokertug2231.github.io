@@ -1,14 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<body>
-  <div class="wrapper">
-
-
 <head>
 <title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
 </head>
 <body>
 
@@ -24,11 +83,12 @@
     <div align="center">
       <a href="Senjei.html"><img src="Senjei.jpg" height="100" width="100"></a>
       <a href="Spider Gecko.html"><img src="Jango the Spider Gecko.jpg" height="100" width="100"></a>
-      <a href="My Fish Tank.html"><img src="Fish Tank.gif" height="100" width="100"></a><br>
+      <a href="new page 4.html"><img src="Fish Tank.gif" height="100" width="100"></a><br>
     Click US
     </div>
     </ul>
   </nav>
+  
   
   
   <article>
