@@ -19,28 +19,29 @@ header {
 
 /* Create two columns/boxes that floats next to each other */
 nav {
-  
+  flex:;
   float: left;
   background: #ccc;
   padding: 20px;
+  
 }
+ /*Style the list inside the menu*/ 
 
- Style the list inside the menu 
 nav ul {
   list-style-type: none;
   padding: 20px;
+  
 }
 
 article {
-  padding: 20px;
   background-color: #f1f1f1;
+  padding: 20px;  
 }
 
 /* Clear floats after the columns */
 section {
-
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 1fr 3fr;
   grid-row: 1/-1;
 }
 
